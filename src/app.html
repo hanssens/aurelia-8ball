@@ -1,0 +1,46 @@
+<template>
+  <require from="bootstrap/css/bootstrap.css"></require>
+  <require from="sweetalert/sweetalert.css"></require>
+  <require from="app.css"></require>
+
+  <!-- vector: https://www.vecteezy.com/vector-art/89788-free-magic-8-ball-vector 
+    thanks to: nightwolfdezines
+    https://www.vecteezy.com/members/nightwolfdezines
+  -->
+
+  <div class="container">
+    <div class="row">
+
+      <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+        &nbsp;
+      </div>
+
+      <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+        <h1>Ask the Magic 8 Ball</h1>
+        
+        <form role="form" submit.delegate="ask()">
+          <div class="input-group">
+
+            <input type="text" class="form-control" placeholder="Should..." autofocus>
+            <span class="input-group-btn">
+              <button class="btn btn-default" type="button" click.delegate="ask()">Go!</button>
+            </span>
+          </div>
+        </form>
+
+      </div>
+
+      <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+        &nbsp;
+      </div>
+
+
+    </div>
+  </div>
+
+  <!-- the github ribbon -->
+  <a href="https://github.com/hanssens/aurelia-8ball">
+    <img style="position: absolute; top: 0; left: 0; border: 0;" src="https://camo.githubusercontent.com/567c3a48d796e2fc06ea80409cc9dd82bf714434/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f6c6566745f6461726b626c75655f3132313632312e706e67"
+      alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_left_darkblue_121621.png"></a>
+
+</template>
